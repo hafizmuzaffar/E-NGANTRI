@@ -1,0 +1,16 @@
+//berdasarkan hari ini
+
+<div class="col-lg-6 col-md-6 appointment-right pt-60 pb-60">
+              <form class="form-wrap" action="#">
+                <h1 class="pb-20 text-center mb-30">Daftar Shift Dokter</h1>  
+
+               <ul class="time-list">
+                 <?php foreach ($dokter as $key){ ?>
+                <li class="d-flex justify-content-between">
+                  <span><?php echo $key->nama; ?></span>
+                  <span><?php echo $key->nama_poli; ?>  <?php echo $key->jam_awal; ?> - <?php echo $key->jam_akhir; ?></span>
+                </li>   
+                 <?php } ?>                          
+              </ul>
+               
+            </div>
